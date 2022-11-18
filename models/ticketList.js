@@ -15,6 +15,10 @@ severity: {
 assignedTo: {
     type: String,
     required: true
+},
+status: {
+    type: String,
+    default: "Open"
 }, 
 date: {
     type: Date,
