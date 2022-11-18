@@ -1,11 +1,11 @@
-const TodoTask = require('../models/todotask')
+const ticketList = require('../models/ticketList')
 
 module.exports = {
     getIndex : async (req, res) => {
         try {
-            const tasks = await
-            TodoTask.find()
-            res.render("index.ejs", { todoTasks: tasks });
+            const tickets = await
+            ticketList.find()
+            res.render("index.ejs", { ticketList: tickets });
         } catch (err) {
             if (err) return res.status(500).send(err);
         }
