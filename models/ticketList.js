@@ -18,7 +18,7 @@ assignedTo: {
 },
 status: {
     type: String,
-    default: "Open"
+    default: "Open" 
 }, 
 date: {
     type: Date,
